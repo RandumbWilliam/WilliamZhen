@@ -1,4 +1,3 @@
-
 $(function() {
 
     $('.na>a[href*="#"]:not([href="#"])').on('click', function () {

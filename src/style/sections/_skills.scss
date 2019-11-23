@@ -1,9 +1,9 @@
 #skills {
-  background-color: $white-color;
+  background-color: $soft-grey;
   color: $dark-blue-text;
   margin-top: -10rem;
   margin-bottom: -15rem;
-  padding-top: 15rem;
+  padding-top: 5rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -14,26 +14,49 @@
     margin-bottom: 15rem;
 
     @include respond(phone) {
-      margin-bottom: 0rem;
+      margin-bottom: 15rem;
     }
 
     .row {
       margin-bottom: 3rem;
 
+      @include respond(tab-land) {
+        margin: 0;
+      }
+
       @include respond(phone) {
-        margin-bottom: 4rem;
+        margin-bottom: 0;
       }
     }
 
     .col-md-4 {
       display: inline-block;
       float: left;
+      transition: 0.5s;
+    }
+
+    .col-md-4:hover {
+      transform: translateY(-10px);
+      .skills-wrapper__text-icon {
+        transition: color 0.5s ease;
+        color: $primary-color;
+      }
     }
 
     .single-service {
       border-radius: 10px;
-      background-color: $soft-grey;
+      border: 2px solid $dark-blue-text;
+
       padding: 10px;
+      position: relative;
+
+      @include respond(tab-land) {
+        margin: 10px 0;
+      }
+
+      @include respond(phone) {
+        margin: 10px 0;
+      }
     }
 
     &__text {
@@ -55,7 +78,6 @@
         }
       }
       &-icon {
-        font-weight: bold;
         font-size: $big-font-size;
 
         @include respond(phone) {
@@ -73,6 +95,11 @@
 
       & p > a {
         color: $secondary-color;
+      }
+
+      & p .heading {
+        font-weight: bold;
+        color: $primary-color;
       }
     }
   }
