@@ -47,6 +47,9 @@
         @include respond(phone) {
           font-size: 2rem;
         }
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
       }
 
       &-date {
@@ -56,6 +59,18 @@
         @include respond(phone) {
           position: absolute;
           top: 5.4rem;
+          float: left;
+          font-size: 1.5rem;
+        }
+        @include respond(tab-land) {
+          position: absolute;
+          top: 7.0rem;
+          float: left;
+          font-size: 1.8rem;
+        }
+        @include respond(tab-port) {
+          position: absolute;
+          top: 5.2rem;
           float: left;
           font-size: 1.5rem;
         }
@@ -72,6 +87,14 @@
           font-size: 1.4rem;
           line-height: 2.0rem;
           top: 1.4rem;
+        }
+        @include respond(tab-land) {
+          top: 0.9rem;
+        }
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+          line-height: 2.3rem;
+          top: 0.5rem;
         }
       }
 

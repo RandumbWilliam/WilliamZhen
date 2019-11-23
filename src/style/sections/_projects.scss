@@ -73,6 +73,10 @@
           margin-bottom: 3.2rem;
         }
       }
+
+      & .thumbnail:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
