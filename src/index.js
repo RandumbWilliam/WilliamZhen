@@ -3,6 +3,10 @@ import initDd from './js/dropdown';
 import initNa from './js/navpage';
 import './style/main.scss';
 
+$(window).on('load', function(event) {
+    $('.preloader').delay(500).fadeOut(500);
+});
+
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
   if (target.length) {
@@ -32,10 +36,6 @@ $(window).scroll(function() {
             $(this).parent().siblings().removeClass('active');
         }
     });
-});
-
-$(window).on('load', function(event) {
-    $('.preloader').delay(500).fadeOut(500);
 });
 
 initSr();
