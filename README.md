@@ -12,7 +12,7 @@ A personal portfolio including my interests, experience, resume, skills and proj
 Open your command line
 
 1. Clone this repository <br>
-$ git clone https://github.com/cobidev/simplefolio
+$ git clone https://github.com/RandumbWilliam/WilliamZhen
 
 2. Go into the repository <br>
 $ cd simplefolio
