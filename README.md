@@ -1,8 +1,5 @@
 # William Zhen Portfolio
 
-Check out it live:
-https://williamzhen.netlify.com/
-
 A personal portfolio including my interests, experience, resume, skills and projects!
 
 <h2 align="center">
